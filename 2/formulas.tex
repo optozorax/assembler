@@ -1,0 +1,15 @@
+\begin{aligned}
+&x_{k+1} = x_k - \frac{f(x_k)}{f'(x_k) - \frac{d_k}{c_k - x_k}} \\
+&d_k = f(x_k) \\
+&c_k = x_k + \frac{f(x_k)-2}{f'(x_k)}
+\end{aligned}
+
+\begin{aligned}
+x_{k+1} &= x_k - \frac{f(x_k)}{f'(x_k) - \frac{f(x_k)}{x_k + \frac{f(x_k)-2}{f'(x_k)} - x_k}} = x_k - \frac{f(x_k)}{f'(x_k) - \frac{f(x_k) f'(x_k)}{f(x_k)-2}} \\
+&= x_k - \frac{f(x_k)}{f'(x_k)\left(1 - \frac{f(x_k)}{f(x_k)-2}\right)}
+\end{aligned}
+
+\begin{aligned}
+&d = f(x),\quad dp = f'(x) \\
+&x_{k+1} = x_k - \frac{d}{dp\left(1 - \frac{d}{d-2}\right)}
+\end{aligned}
